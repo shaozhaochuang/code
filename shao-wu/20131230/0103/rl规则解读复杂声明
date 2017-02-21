@@ -1,0 +1,13 @@
+
+复杂类型声明：
+int (*func)(int *);
+int (*func[5])(int *);
+int (*(*func)[5])(int *);
+int* (*(*func)(int *))[5];
+int (*(*func)(int *))[5];
+int (*func)(int *, int (*)(int *));
+int*(*(*func)[5])(int* (*)[5], void (*)(int (*)[5]));
+int func[5](void);  
+int func(void)[5]; 
+
+
